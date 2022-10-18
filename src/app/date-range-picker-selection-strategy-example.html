@@ -1,0 +1,34 @@
+<mat-form-field appearance="fill">
+  <mat-label>Max range 7 days</mat-label>
+  <mat-date-range-input [rangePicker]="picker">
+    <input matStartDate placeholder="Start date">
+    <input matEndDate placeholder="End date">
+  </mat-date-range-input>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-date-range-picker maxRange=7 #picker></mat-date-range-picker>
+</mat-form-field>
+<hr/>
+<mat-form-field appearance="fill">
+  <mat-label>Max range 5 days</mat-label>
+  <mat-date-range-input [rangePicker]="picker2">
+    <input matStartDate placeholder="Start date">
+    <input matEndDate placeholder="End date">
+  </mat-date-range-input>
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-date-range-picker maxRange=5 #picker2></mat-date-range-picker>
+</mat-form-field>
+<hr/>
+<mat-form-field appearance="fill">
+  <mat-label>Enter a date range</mat-label>
+  <mat-date-range-input [rangePicker]="picker3">
+    <input matStartDate placeholder="Start date">
+    <input matEndDate placeholder="End date">
+  </mat-date-range-input>
+  <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+  <mat-date-range-picker #picker3></mat-date-range-picker>
+</mat-form-field>
+
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
